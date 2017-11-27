@@ -1,0 +1,6 @@
+Data/
+pyenv/
+Data*
+*.jl
+*.pyc
+.caches/
