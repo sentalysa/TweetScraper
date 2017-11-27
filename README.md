@@ -29,6 +29,7 @@ It requires [Scrapy](http://scrapy.org/) and [langdetect](https://pypi.python.or
 	The *query* can be any thing (keyword, hashtag, etc.) you want to search in [Twitter Search](https://twitter.com/search-home). `TweetScraper` will crawl the search results of the query and save the tweet content. There are several arguments that mentioned above for customizing search, such as *lang*: for lanugage of tweet texts, *since*, and *until*: for time date period selection, *fromAccount* and *toAccount* for getting tweets from or replying to a specified account respectively, *maxTweets* for getting a specific number of tweets, *textOnly* is a boolean option if you want to get just the text of tweets, and *numberOfConcurrentCrawler* for setting number of concurrent crawler for crawling. All the above arguments can be set in a config file and give it to the cli with *configFile* option
 
 E.g.: `python run.py --query foo --textOnly True`
+
 2. The tweets will be saved to disk in `./Data/tweet/`. The file format is JSON. Change the `SAVE_TWEET_PATH`  in `TweetScraper/settings.py` if you want another location.
 
 # About #
